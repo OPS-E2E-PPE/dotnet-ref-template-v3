@@ -32,7 +32,7 @@
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <typeparam name="K">To be added.</typeparam>
-    <summary>This is the class page of <xref:CatLibrary.Cat`2>.</summary>
+    <summary>This is the class page of <see cref="T:CatLibrary.Cat`2" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
