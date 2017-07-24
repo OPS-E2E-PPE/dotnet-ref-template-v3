@@ -32,7 +32,7 @@
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <typeparam name="K">To be added.</typeparam>
-    <summary>This is the class page of <see cref="T:CatLibrary.Cat`2" />. It's a children of <see cref="N:CatLibrary" />, and it has many children like <see cref="M:CatLibrary.Cat`2.CalculateFood(System.DateTime)"/>.</summary>
+    <summary>This is the class page of <see cref="T:CatLibrary.Cat`2" />. It's a child type of <see cref="N:CatLibrary" />, and it has many children like <see cref="M:CatLibrary.Cat`2.CalculateFood(System.DateTime)"/>.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
