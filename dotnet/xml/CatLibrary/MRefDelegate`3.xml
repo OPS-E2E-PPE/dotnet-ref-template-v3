@@ -39,13 +39,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="K">To be added.</typeparam>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="L">To be added.</typeparam>
-    <param name="k">To be added.</param>
-    <param name="t">To be added.</param>
-    <param name="l">To be added.</param>
-    <summary>To be added.</summary>
+    <typeparam name="K">Generic K.</typeparam>
+    <typeparam name="T">Generic T.</typeparam>
+    <typeparam name="L">Generic L.</typeparam>
+    <param name="k">Type K.</param>
+    <param name="t">Type T.</param>
+    <param name="l">Type L.</param>
+    <summary>
+            Generic delegate with many constrains.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

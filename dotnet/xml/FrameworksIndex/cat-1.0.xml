@@ -28,9 +28,6 @@
     <Type Name="CatLibrary.Complex`2" Id="T:CatLibrary.Complex`2">
       <Member Id="M:CatLibrary.Complex`2.#ctor" />
     </Type>
-    <Type Name="CatLibrary.Dog`1" Id="T:CatLibrary.Dog`1">
-      <Member Id="M:CatLibrary.Dog`1.#ctor" />
-    </Type>
     <Type Name="CatLibrary.FakeDelegate`1" Id="T:CatLibrary.FakeDelegate`1" />
     <Type Name="CatLibrary.IAnimal" Id="T:CatLibrary.IAnimal">
       <Member Id="M:CatLibrary.IAnimal.Eat" />
@@ -48,9 +45,6 @@
     </Type>
     <Type Name="CatLibrary.MRefDelegate`3" Id="T:CatLibrary.MRefDelegate`3" />
     <Type Name="CatLibrary.MRefNormalDelegate" Id="T:CatLibrary.MRefNormalDelegate" />
-    <Type Name="CatLibrary.Tiny" Id="T:CatLibrary.Tiny">
-      <Member Id="M:CatLibrary.Tiny.#ctor" />
-    </Type>
     <Type Name="CatLibrary.Tom" Id="T:CatLibrary.Tom">
       <Member Id="M:CatLibrary.Tom.#ctor" />
       <Member Id="M:CatLibrary.Tom.TomMethod(CatLibrary.Complex{CatLibrary.TomFromBaseClass,CatLibrary.TomFromBaseClass},System.Tuple{System.String,CatLibrary.Tom})" />
