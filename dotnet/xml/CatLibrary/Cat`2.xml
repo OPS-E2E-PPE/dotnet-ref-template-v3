@@ -30,10 +30,56 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="K">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">This type should be class and can new instance.</typeparam>
+    <typeparam name="K">This type is a struct type, class type can't be used for this parameter.</typeparam>
+    <summary>
+      <para>Here's main class of this <i>Demo</i>.</para>
+      <para>You can see mostly type of article within this class and you for more detail, please see the remarks.</para>
+      <para />
+      <para>this class is a template class. It has two Generic parameter. they are: <typeparamref name="T" /> and <typeparamref name="K" />.</para>
+      <para>The extension method of this class can refer to <see cref="T:CatLibrary.ICatExtension" /> class</para>
+    </summary>
+    <remarks>
+      <para>Here's all the content you can see in this class.</para>
+      <list type="ordered">
+        <listItem>Constructors. With different input parameters.</listItem>
+        <listItem>
+          <b>Methods</b>. Including:
+            <list><listItem>
+            Template method.
+            </listItem><listItem>
+            Normal method wit generic parameter.
+            </listItem><listItem>
+            Override method.
+            </listItem><listItem>
+            unsafe method with pointer.
+            </listItem></list></listItem>
+        <listItem>
+          <b>Operators</b>. You can also see explicit operator here.</listItem>
+        <listItem>
+          <b>Properties</b>. Include normal property and index.</listItem>
+        <listItem>
+          <b>Events</b>.</listItem>
+        <listItem>
+          <b>Fields</b>.</listItem>
+        <listItem>
+          <b>EII</b>. ExplicitImplementInterface. including eii property, eii method, eii event.</listItem>
+        <listItem>
+          <b>Extension Methods</b>. The extension methods not definition in this class, but we can find it!</listItem>
+      </list>
+    </remarks>
+    <example>
+      <para>Here's example of how to create an instance of this class. As T is limited with <c>class</c> and K is limited with <c>struct</c>.</para>
+      <code language="c#">
+                var a = new Cat(object, int)();
+                int catNumber = new int();
+                unsafe
+                {
+                    a.GetFeetLength(catNumber);
+                }
+            </code>
+      <para>As you see, here we bring in <b>pointer</b> so we need to add <languageKeyword>unsafe</languageKeyword> keyword.</para>
+    </example>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,7 +93,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Default constructor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +112,10 @@
         <Parameter Name="ownType" Type="T" />
       </Parameters>
       <Docs>
-        <param name="ownType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ownType">This parameter type defined by class.</param>
+        <summary>
+            Constructor with one generic parameter.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,11 +135,13 @@
         <Parameter Name="isHealthy" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="nickName">To be added.</param>
-        <param name="age">To be added.</param>
-        <param name="realName">To be added.</param>
-        <param name="isHealthy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nickName">it's string type.</param>
+        <param name="age">It's an out and ref parameter.</param>
+        <param name="realName">It's an out paramter.</param>
+        <param name="isHealthy">It's an in parameter.</param>
+        <summary>
+            It's a complex constructor. The parameter will have some attributes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +158,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Hint cat's age.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,9 +181,11 @@
         <Parameter Name="date" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="date">Date time to now.</param>
+        <summary>
+            It's a method with complex return type.
+            </summary>
+        <returns>It's a relationship map of different kind food.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +203,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            EII method.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +225,10 @@
         <Parameter Name="food" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="food">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="food">Food to eat</param>
+        <summary>
+            Implementation of Eat(food)
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +255,11 @@
         <Parameter Name="a" Type="Tool" />
       </Parameters>
       <Docs>
-        <typeparam name="Tool">To be added.</typeparam>
-        <param name="a">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="Tool">Tool for eat.</typeparam>
+        <param name="a">Tool name.</param>
+        <summary>
+            EII template method.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +279,11 @@
         <Parameter Name="a" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="a">Cat's number.</param>
+        <summary>
+            EII index.
+            </summary>
+        <value>Cat's name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +303,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">Can pass any class type.</param>
+        <summary>
+            Override the method of <c>Object.Equals(object obj).</c></summary>
+        <returns>The return value tell you whehter the compare operation is successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,10 +333,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="catName">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="catName">Thie represent for cat name length.</param>
+        <param name="parameters">Optional parameters.</param>
+        <summary>
+            It's an <c>unsafe</c> method.
+            As you see, <paramref name="catName" /> is a <b>pointer</b>, so we need to add <languageKeyword>unsafe</languageKeyword> keyword.
+            </summary>
+        <returns>Return cat tail's length.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,7 +361,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Field with attribute.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +383,11 @@
         <Parameter Name="a" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="a">Cat's name.</param>
+        <summary>
+            This is index property of Cat. You can see that the visibility is different between <c>get</c> and <c>set</c> method.
+            </summary>
+        <value>Cat's number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,11 +414,14 @@
         <Parameter Name="cheat" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ownType">To be added.</param>
-        <param name="anotherOwnType">To be added.</param>
-        <param name="cheat">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ownType">Type come from class define.</param>
+        <param name="anotherOwnType">Type come from class define.</param>
+        <param name="cheat">Hint whether this cat has cheat mode.</param>
+        <summary>
+            This method have attribute above it.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">This is an argument exception</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -362,13 +437,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            EII property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static int op_Addition (CatLibrary.Cat&lt;T,K&gt; lsr, int rsr);" />
+      <MemberSignature Language="C#" Value="public static int operator + (CatLibrary.Cat&lt;T,K&gt; lsr, int rsr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Addition(class CatLibrary.Cat`2&lt;!T, !K&gt; lsr, int32 rsr) cil managed" />
       <MemberSignature Language="DocId" Value="M:CatLibrary.Cat`2.op_Addition(CatLibrary.Cat{`0,`1},System.Int32)" />
       <MemberType>Method</MemberType>
@@ -384,15 +461,17 @@
         <Parameter Name="rsr" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lsr">To be added.</param>
-        <param name="rsr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lsr">...</param>
+        <param name="rsr">~~~</param>
+        <summary>
+            Addition operator of this class.
+            </summary>
+        <returns>Result with <i>int</i> type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static CatLibrary.Tom op_Explicit (CatLibrary.Cat&lt;T,K&gt; src);" />
+      <MemberSignature Language="C#" Value="public static explicit operator CatLibrary.Tom (CatLibrary.Cat&lt;T,K&gt; src);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class CatLibrary.Tom op_Explicit(class CatLibrary.Cat`2&lt;!T, !K&gt; src) cil managed" />
       <MemberSignature Language="DocId" Value="M:CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom" />
       <MemberType>Method</MemberType>
@@ -407,14 +486,16 @@
         <Parameter Name="src" Type="CatLibrary.Cat&lt;T,K&gt;" />
       </Parameters>
       <Docs>
-        <param name="src">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="src">Instance of this class.</param>
+        <summary>
+            Expilicit operator of this class.
+            <para>It means this cat can evolve to change to Tom. Tom and Jerry.</para></summary>
+        <returns>Advanced class type of cat.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static int op_Subtraction (CatLibrary.Cat&lt;T,K&gt; lsr, int rsr);" />
+      <MemberSignature Language="C#" Value="public static int operator - (CatLibrary.Cat&lt;T,K&gt; lsr, int rsr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Subtraction(class CatLibrary.Cat`2&lt;!T, !K&gt; lsr, int32 rsr) cil managed" />
       <MemberSignature Language="DocId" Value="M:CatLibrary.Cat`2.op_Subtraction(CatLibrary.Cat{`0,`1},System.Int32)" />
       <MemberType>Method</MemberType>
@@ -432,7 +513,9 @@
       <Docs>
         <param name="lsr">To be added.</param>
         <param name="rsr">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Similar with operaotr +, refer to that topic.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -450,7 +533,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Eat event of this cat
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

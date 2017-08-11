@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            *TomFromBaseClass* inherits from @
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +30,11 @@
         <Parameter Name="k" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="k">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="k">
+        </param>
+        <summary>
+            This is a #ctor with parameter
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

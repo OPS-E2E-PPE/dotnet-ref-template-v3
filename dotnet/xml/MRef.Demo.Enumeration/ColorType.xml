@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Enumeration ColorType
+            </summary>
+    <remarks>
+      <para>
+            Red/Blue/Yellow can become all color you want.
+            </para>
+      <list type="bullet">
+        <listItem>
+            Orange = Red + Yellow
+            </listItem>
+        <listItem>
+            Purple = Red + Blue
+            </listItem>
+        <listItem>
+            Green = Blue + Yellow
+            </listItem>
+      </list>
+    </remarks>
+    <altmember cref="T:System.Object" />
   </Docs>
   <Members>
     <Member MemberName="Blue">
@@ -27,7 +45,9 @@
         <ReturnType>MRef.Demo.Enumeration.ColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            blue like river
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Red">
@@ -43,7 +63,9 @@
         <ReturnType>MRef.Demo.Enumeration.ColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            this color is red
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Yellow">
@@ -59,7 +81,9 @@
         <ReturnType>MRef.Demo.Enumeration.ColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            yellow comes from desert
+            </summary>
       </Docs>
     </Member>
   </Members>
