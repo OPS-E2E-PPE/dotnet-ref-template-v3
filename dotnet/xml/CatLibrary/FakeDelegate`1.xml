@@ -27,12 +27,14 @@
     <ReturnType>System.Int32</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <param name="num">To be added.</param>
-    <param name="name">To be added.</param>
-    <param name="scores">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <typeparam name="T">Fake para</typeparam>
+    <param name="num">Fake para</param>
+    <param name="name">Fake para</param>
+    <param name="scores">Optional Parameter.</param>
+    <summary>
+            Fake delegate
+            </summary>
+    <returns>Return a fake number to confuse you.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -17,9 +17,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="pics">To be added.</param>
-    <param name="name">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="pics">a name list of pictures.</param>
+    <param name="name">give out the needed name.</param>
+    <summary>
+            Delegate in the namespace
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -42,7 +42,7 @@
           <AttributeName>System.Runtime.InteropServices.Guid("ebf2ea46-ea00-4350-be1d-d86afd699db3")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName="")</AttributeName>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName=".NET Framework 4.5")</AttributeName>
         </Attribute>
       </Attributes>
     </Assembly>
@@ -54,14 +54,12 @@
       <Type Name="Cat`2" DisplayName="Cat&lt;T,K&gt;" Kind="Class" />
       <Type Name="CatException`1" DisplayName="CatException&lt;T&gt;" Kind="Class" />
       <Type Name="Complex`2" DisplayName="Complex&lt;T,J&gt;" Kind="Class" />
-      <Type Name="Dog`1" DisplayName="Dog&lt;T&gt;" Kind="Class" />
       <Type Name="FakeDelegate`1" DisplayName="FakeDelegate&lt;T&gt;" Kind="Delegate" />
       <Type Name="IAnimal" Kind="Interface" />
       <Type Name="ICat" Kind="Interface" />
       <Type Name="ICatExtension" Kind="Class" />
       <Type Name="MRefDelegate`3" DisplayName="MRefDelegate&lt;K,T,L&gt;" Kind="Delegate" />
       <Type Name="MRefNormalDelegate" Kind="Delegate" />
-      <Type Name="Tiny" Kind="Class" />
       <Type Name="Tom" Kind="Class" />
       <Type Name="TomFromBaseClass" Kind="Class" />
     </Namespace>
@@ -88,9 +86,11 @@
           <Parameter Name="toy" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="icat">To be added.</param>
-          <param name="toy">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="icat">Cat</param>
+          <param name="toy">Something to play</param>
+          <summary>
+            Extension method to let cat play
+            </summary>
         </Docs>
         <Link Type="CatLibrary.ICatExtension" Member="M:CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String)" />
       </Member>
@@ -112,9 +112,11 @@
           <Parameter Name="hours" Type="System.Int64" />
         </Parameters>
         <Docs>
-          <param name="icat">To be added.</param>
-          <param name="hours">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="icat">The type will be extended.</param>
+          <param name="hours">The length of sleep.</param>
+          <summary>
+            Extension method hint that how long the cat can sleep.
+            </summary>
         </Docs>
         <Link Type="CatLibrary.ICatExtension" Member="M:CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64)" />
       </Member>
