@@ -77,6 +77,7 @@
                 {
                     a.GetFeetLength(catNumber);
                 }
+                Cat&lt;T&gt; cat = new Cat&lt;T&gt;("abcd name&quot;);
             </code>
       <para>As you see, here we bring in <b>pointer</b> so we need to add <languageKeyword>unsafe</languageKeyword> keyword.</para>
     </example>
@@ -163,6 +164,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="cc3e540b-63b0-4edf-b0c0-69c38f3795d3">Data Type Summary</related>
       </Docs>
     </Member>
     <Member MemberName="CalculateFood">
