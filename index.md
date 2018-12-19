@@ -1,1 +1,0 @@
-# Welcome to ppe-dotnet-ref-template!
